@@ -151,7 +151,7 @@ respectively.
 having PSaC; orange leafs are predicted as having PSaC. Number of samples, percent PSaC, and relative PSaC risk for each leaf are reported and are in 
 reference to our full sample of 305 subjects. Mean and 95% Confidence Intervals for percentages and risk ratios, as derived from bootstrapping, are 
 included in the Supplementary File.  
-<img src="figs/offical_tree.jpg" alt="Decision Tree" width="600">  
+<img src="figs\official_tree.jpg" alt="Decision Tree" width="600">  
 *Footnote.* Risk ratios are calculated with respect to the overall samples’ prevalence of PSaC (i.e., 20% with PSaC). Therefore, a risk ratio of 1.0 
 indicates that the risk of PSaC in that leaf is equal to the risk of PSaC in the sample as a whole. A risk ratio &lt;1.0 indicates a lower risk compared 
 to the remaining sample. A risk ratio &gt;1.0 indicates a greater risk.  
@@ -160,7 +160,7 @@ to the remaining sample. A risk ratio &gt;1.0 indicates a greater risk.
 **Figure 2.** Decision boundary for predicting PSaC using HBI scores and time to evaluation. Blue squares are patients without PSaC, orange triangles are 
 patients with PSaC. The shaded orange region are values of HBI scores and time to evaluation where the decision tree would predict PSaC development. The 
 blue regions, the tree would predict no PSaC development. 
-<img src="figs/decision_boundary.jpg" alt="Decision Boundary" width="600">  
+<img src="figs\decision_boundary.png" alt="Decision Boundary" width="600">  
 
 
 ## Conclusion 
@@ -174,38 +174,40 @@ adolescents with concussion.
 
 ## Supplemental Figures 
 
-#### Understanding parameter selecction:
+### Understanding parameter selecction:
 
 **Supplementary Figure 1.** Selection of Cost-Complexity post-pruning (CCP)-alpha based on accuracy during cross-validation. The CCP-a value with the 
 highest validation set accuracy was used for tree building. This maximizes potential generalization to unseen data and reduces risk of overfitting. 
 
-<img src="figs/Figure_1.png" alt="accuracy vs alpha" width="600">  
+<img src="figs\Figure_1.png" alt="accuracy vs alpha" width="600">  
 
 **Footnote.**  
 *Understanding CCP-Alpha.* The x-axis represents potential values of alpha that could be used during Cost-Complexity Post-Pruning (CCP). The objective of CCP is to reduce the size of the decision tree, thereby promoting generalizability to unseen data by balancing the overall accuracy of the decision tree with the tree depth (i.e., complexity). An unpruned decision tree (alpha 0.000 on the x-axis) resulted in a tree with significant depth and size (e.g., several more splits than our final tree). Performance in the training data, where the tree was developed, was high: approximately 95% of patients were correctly classified. However, the highly complex, non-pruned tree performed poorly on unseen data – a classic sign of overfitting – with an accuracy of approximately 75%.  
 
 *Selection of CCP-Alpha.* We selected a CCP-alpha value that maximized performance in both the training and validation datasets, around alpha=0.015. 
 <br>
+<br>
 
-#### Bootstrapping for confidence intervals: 
+### Bootstrapping for confidence intervals: 
 
 **Supplementary Figure 2A.** Bootstrapped means and confidence intervals for the percentage of patients with PSaC and relative PSaC risk in each terminal 
 leaf. Bootstrapping was conducted with replacement and for 1,000 iterations. 
 
-<img src="figs/offical_tree_confidence_intervals.jpg" alt="Bootstrapped decision tree" width="600">  
+<img src="figs\official_tree_confidence_intervals.jpg" alt="Bootstrapped decision tree" width="600">  
 
 *Footnote.* Risk ratios are calculated with respect to the overall bootstrapped samples prevalence of PSaC, which varied in each iteration because of our 
 replacement sampling. A risk ratio of 1.0 indicates that the risk of PSaC in that leaf is equal to the probability of PSaC in the sample as a whole. A 
 risk ratio <1.0 indicates a lower risk compared to the remaining sample. A risk ratio >1.0 indicates a greater risk. 
 <br>
+<br>
 
-#### Clinically-relevant take-away: 
+### Clinically-relevant take-away: 
 
 **Supplementary Figure 2B.** A fun version of the same info as above, maybe good for a poster. This includes only the 95% Confidence Intervals for the 
 relative PSaC risk ratios in bootstrapping, mostly because I felt that would be most relevant to an ‘outside’ person wanting to use this in their own 
 clinic. Bootstrapping gives us our closest estimate for how this could look in an outside sample, so that is the info included here.  
 
-<img src="figs/hbi_time_riskTree_confidence_intervals.jpg" alt="Bootstrapped decision tree" width="600">  
+<img src="figs\hbi_time_riskTree_confidence_intervals.jpg" alt="Bootstrapped decision tree" width="600">  
 
 *Footnote.* Interpretation remains the same. For the far left leaf, risk is estimated to be the lowest among all the leaves, so these kids have 0.9 to 0.
 45 the risk of PSaC compared to the rest of the sample (or, less than half as likely, we think). For the far right leaf, risk is estimated to be much 
