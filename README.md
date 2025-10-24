@@ -77,8 +77,7 @@ literature. Our sample was recruited from a specialty care clinic and its PSaC p
 for flexibility in the PSaC proportion in each bootstrapped sample, our confidence intervals are expected to be wider (i.e., less certain) but more 
 generalizable and representative of a range of values that might be observed in other samples with higher or lower PSaC prevalence. 
 
-Data analysis was conducted in Python programing language (Python Software Foundation,  https://www.python.org/). Scripts are available at *will add link 
-when I upload it to Github*.  
+Data analysis was conducted in Python programing language (Python Software Foundation,  https://www.python.org/). Scripts are available at https://github.com/wingersonMJ/Decision_tree_prediction.  
 
 ## Results
 
