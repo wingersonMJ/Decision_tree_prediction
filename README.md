@@ -179,7 +179,7 @@ adolescents with concussion.
 **Supplementary Figure 1.** Selection of Cost-Complexity post-pruning (CCP)-alpha based on accuracy during cross-validation. The CCP-a value with the 
 highest validation set accuracy was used for tree building. This maximizes potential generalization to unseen data and reduces risk of overfitting. 
 
-<img src="figs/Figure_1.jpg" alt="accuracy vs alpha" width="600">  
+<img src="figs/Figure_1.png" alt="accuracy vs alpha" width="600">  
 
 **Footnote.**  
 *Understanding CCP-Alpha.* The x-axis represents potential values of alpha that could be used during Cost-Complexity Post-Pruning (CCP). The objective of CCP is to reduce the size of the decision tree, thereby promoting generalizability to unseen data by balancing the overall accuracy of the decision tree with the tree depth (i.e., complexity). An unpruned decision tree (alpha 0.000 on the x-axis) resulted in a tree with significant depth and size (e.g., several more splits than our final tree). Performance in the training data, where the tree was developed, was high: approximately 95% of patients were correctly classified. However, the highly complex, non-pruned tree performed poorly on unseen data – a classic sign of overfitting – with an accuracy of approximately 75%.  
