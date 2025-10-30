@@ -158,7 +158,8 @@ to the remaining sample. A risk ratio &gt;1.0 indicates a greater risk.
 
 **Figure 2.** Decision boundary for predicting PSaC using HBI scores and time to evaluation. Blue squares are patients without PSaC, orange triangles are 
 patients with PSaC. The shaded orange region are values of HBI scores and time to evaluation where the decision tree would predict PSaC development. The 
-blue regions, the tree would predict no PSaC development. 
+blue regions, the tree would predict no PSaC development.  
+
 <img src="figs\decision_boundary.png" alt="Decision Boundary" width="600">  
 
 
